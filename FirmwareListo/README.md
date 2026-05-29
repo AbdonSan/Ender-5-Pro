@@ -24,10 +24,13 @@ Hay dos versiones compiladas en esta carpeta:
 
 | Archivo | Fecha | Qué incluye |
 |---|---|---|
-| `firmware-20260529-151826.bin` | 29 May 2026 - 15:18 | Versión anterior (sin PID de cama) |
-| `firmware-20260529-153702.bin` | 29 May 2026 - 15:37 | ✅ **Versión recomendada** (con PID de cama activado) |
+| `firmware-20260529-151826.bin` | 29 May 2026 - 15:18 | Versión inicial de referencia |
+| `firmware-20260529-153702.bin` | 29 May 2026 - 15:37 | Versión anterior (PIDTEMPBED activado — NO usar, bug de cama) |
+| `firmware-20260529-165457.bin` | 29 May 2026 - 16:54 | ✅ **Versión recomendada** (bug de cama caliente corregido) |
 
-**Usa `firmware-20260529-153702.bin`** — es la más reciente y tiene el control de temperatura de la cama mejorado.
+**Usa `firmware-20260529-165457.bin`** — es la versión corregida que soluciona el problema de la cama calentándose sola al encender.
+
+> ⚠️ **Si tu cama se calienta sola al encender sin objetivo de temperatura:** flashea esta versión. Era un bug del timer STM32F4 activado por PIDTEMPBED.
 
 ---
 
