@@ -3730,7 +3730,7 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-//#define STARTUP_COMMANDS "M17 Z"
+#define STARTUP_COMMANDS "M140 S0\nM104 S0"  // Forzar apagado cama+hotend al inicio
 
 /**
  * G-code Macros
